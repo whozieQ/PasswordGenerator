@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap" rel="stylesheet">        
+    </head>
+    <body>
+        <h1 class="boldest">Generate a <br><span id="callout" class="boldest">random password</span></h1>
+        <h3 class="regular">Never use an insecure password again.</h3>
+        <div id="options">
+            <p class="midbold">Options:</p>
+            <ul>
+                <li><label for="pLength">Length: </label><input id="pLength" name="pLength" type="number" min="6" max="20" value="15"> (between 6 and 20)</li>
+                <li><label for="pUpper">At least:</label><input id="pUpper" name="pUpper" type="number" min="1" max="2" value="1"> Upper Case (1 or 2)</li>
+                <li><label for="pNumber">Include Numbers:</label><input id="pNumber" name="pNumber" type="checkbox" value="true" checked><span id="number-el"></span></li>
+                <li><label for="pSymbol">Include Symbols: </label><input id="pSymbol" name="pSymbol" type="checkbox" value="true" checked><span id="symbol-el"></span></li>
+            </ul> 
+        </div>
+        <button id="generate-btn">Generate Passwords</button>
+        <hr>
+        <div id="passwords">
+            <p id="pwd1-el">Password1</p><p id="pwd2-el">Password2</p>
+        </div>
+        <p class="ital">Click on a password to copy it to the clipboard.</p>
+        <script src="index.js"></script>
+    </body>
+</html>
